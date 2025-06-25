@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="248" fill="#4F46E5" />
+  
+  <!-- Book Stack -->
+  <path d="M176 176h160v32H176v-32z" fill="white" />
+  <path d="M176 224h160v32H176v-32z" fill="white" />
+  <path d="M176 272h160v32H176v-32z" fill="white" />
+  
+  <!-- Dollar Symbol -->
+  <path d="M280 144v224M256 144h48c17.673 0 32 14.327 32 32v32c0 17.673-14.327 32-32 32h-48v-96zM256 240h48c17.673 0 32 14.327 32 32v32c0 17.673-14.327 32-32 32h-48v-96z" stroke="white" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Graduation Cap -->
+  <path d="M128 368l128-64 128 64-128 64-128-64z" fill="white" />
+  <path d="M256 304v128" stroke="white" stroke-width="16" stroke-linecap="round" />
+</svg>

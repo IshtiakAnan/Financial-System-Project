@@ -1,0 +1,235 @@
+/* Import Tailwind base styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    background-color: rgb(249, 250, 251);
+    color: rgb(17, 24, 39);
+  }
+
+  h1 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.375rem;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-primary:focus {
+    outline: none;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-width: 2px;
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn-secondary {
+    padding: 0.5rem 1rem;
+    background-color: rgb(75, 85, 99);
+    color: white;
+    border-radius: 0.375rem;
+    transition-property: color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(55, 65, 81);
+}
+
+.btn-secondary:focus {
+    outline: none;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-color: rgb(107, 114, 128 / 0.5);
+    --tw-ring-offset-width: 2px;
+}
+
+.btn-secondary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn-danger {
+    padding: 0.5rem 1rem;
+    background-color: rgb(220, 38, 38);
+    color: white;
+    border-radius: 0.375rem;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.btn-danger:hover {
+    background-color: rgb(185, 28, 28);
+}
+
+.btn-danger:focus {
+    outline: none;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-color: rgb(239 68 68 / 0.5);
+    --tw-ring-offset-width: 2px;
+}
+
+.btn-danger:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .input-field {
+    margin-top: 0.25rem;
+    display: block;
+    width: 100%;
+    border-radius: 0.375rem;
+    border-color: #D1D5DB;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-field:focus {
+    border-color: #3B82F6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(55, 65, 81);
+  }
+
+  .card {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(229, 231, 235);
+  }
+
+  .table {
+    min-width: 100%;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: rgb(229, 231, 235);
+  }
+
+  .table-header {
+    background-color: rgb(249, 250, 251);
+  }
+
+  .table-header-cell {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgb(107, 114, 128);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .table-body {
+    background-color: white;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: rgb(229, 231, 235);
+  }
+
+  .table-body-cell {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    color: rgb(17, 24, 39);
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: white;
+    border-top: 1px solid rgb(229, 231, 235);
+    border-color: rgb(229, 231, 235);
+  }
+
+  .alert-error {
+    background-color: rgb(254, 242, 242);
+    border: 1px solid rgb(248, 113, 113);
+    color: rgb(185, 28, 28);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .alert-success {
+    background-color: rgb(240, 253, 244);
+    border: 1px solid rgb(74, 222, 128);
+    color: rgb(21, 128, 61);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .alert-warning {
+    background-color: rgb(254, 252, 232);
+    border: 1px solid rgb(250, 204, 21);
+    color: rgb(161, 98, 7);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .alert-info {
+    background-color: rgb(239, 246, 255);
+    border: 1px solid rgb(96, 165, 250);
+    color: rgb(29, 78, 216);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+  }
+}
